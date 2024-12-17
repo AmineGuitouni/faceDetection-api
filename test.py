@@ -17,7 +17,8 @@ while True:
     face = (face + 1) / 2
     face = cv2.cvtColor(face, cv2.COLOR_RGB2BGR)
 
-    cv2.imshow('frame', face)
+    cv2.imshow('frame', frame)
+    cv2.imshow('face', face)
     key = cv2.waitKey(1) & 0xFF
 
     if key == ord('q'):
